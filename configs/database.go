@@ -13,7 +13,8 @@ import (
 //DB INSTANCE
 var db *gorm.DB
 
-func database() {
+//ConnectDatabase->To Connect postgres instance
+func ConnectDatabase() {
 	envfiles := godotenv.Load()
 
 	if envfiles != nil {
