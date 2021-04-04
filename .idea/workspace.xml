@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14a7b2ee-859b-41e3-b529-64b8e36c02b2" name="Default Changelist" comment="DB Config">
-      <change afterPath="$PROJECT_DIR$/services/auth.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/connect.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/database.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/password.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/database.go" beforeDir="false" afterPath="$PROJECT_DIR$/configs/database.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/database.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/models.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/models.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/setup.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/setup.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +51,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go Application" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -85,10 +93,12 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="DB Config" />
     <MESSAGE value="Creating database Models and setting up routes" />
     <MESSAGE value="Update .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update .gitignore" />
+    <MESSAGE value="Setting Up Registration Service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setting Up Registration Service" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

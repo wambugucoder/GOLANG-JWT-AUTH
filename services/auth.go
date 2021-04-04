@@ -3,13 +3,9 @@ package services
 import (
 	"github.com/go-playground/validator/v10"
 	"github.com/gofiber/fiber/v2"
+	"golang_auth/database"
+	"golang_auth/models"
 )
-
-type RegisterData struct {
-	Username string `validate:"required,min=6,max=32"`
-	Email    string `validate:"required,email,min=6,max=32"`
-	Password string `validate:"required,min=6,max=32"`
-}
 
 type RegisterErrors struct {
 	FailedField string
@@ -18,9 +14,9 @@ type RegisterErrors struct {
 }
 
 func RegisterUser(ctx *fiber.Ctx) error {
-	registerDetails := new(RegisterData)
+	userDetails := new(models.User)
 
-	err := ctx.BodyParser(registerDetails)
+	err := ctx.BodyParser(userDetails)
 
 	if err != nil {
 		return ctx.Status(fiber.StatusInternalServerError).JSON(
@@ -29,23 +25,30 @@ func RegisterUser(ctx *fiber.Ctx) error {
 			})
 
 	}
-	errors := ValidateRegistration(*registerDetails)
+	errors := ValidateRegistration(*userDetails)
 	if errors != nil {
 		return ctx.JSON(errors)
 
 	}
-	//REGISTER USERS
-	return ctx.JSON(registerDetails)
 
+	//ENCRYPT PASSWORD FIRST
+	userDetails.Password = GenerateHash(userDetails.Password)
+
+	results := database.DB.Create(&userDetails)
+
+	return ctx.JSON(fiber.Map{
+		"error":   false,
+		"general": results,
+	})
 }
 
-func ValidateRegistration(data RegisterData) []RegisterErrors {
+func ValidateRegistration(user models.User) []RegisterErrors {
 	var errors []RegisterErrors
 
 	validate := validator.New()
 
 	//validate struct user
-	err := validate.Struct(data)
+	err := validate.Struct(user)
 	if err != nil {
 		for _, err := range err.(validator.ValidationErrors) {
 			var elements RegisterErrors
