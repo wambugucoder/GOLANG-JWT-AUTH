@@ -7,6 +7,11 @@ import (
 	"golang_auth/models"
 )
 
+type RegistrationInput struct {
+	Username string `json:"username" validate:"required,min=6,max=32"`
+	Email    string `json:"email"    validate:"required,email,min=6,max=32"`
+	Password string `json:"password" validate:"required,min=6,max=32"`
+}
 type RegisterErrors struct {
 	FailedField string
 	Tag         string
@@ -14,7 +19,7 @@ type RegisterErrors struct {
 }
 
 func RegisterUser(ctx *fiber.Ctx) error {
-	userDetails := new(models.User)
+	userDetails := new(RegistrationInput)
 
 	err := ctx.BodyParser(userDetails)
 
@@ -34,7 +39,13 @@ func RegisterUser(ctx *fiber.Ctx) error {
 	//ENCRYPT PASSWORD FIRST
 	userDetails.Password = GenerateHash(userDetails.Password)
 
-	results := database.DB.Create(&userDetails)
+	deeds := &models.User{
+		Username: userDetails.Username,
+		Email:    userDetails.Email,
+		Password: userDetails.Password,
+	}
+
+	results := database.DB.Create(deeds)
 
 	return ctx.JSON(fiber.Map{
 		"error":   false,
@@ -42,13 +53,13 @@ func RegisterUser(ctx *fiber.Ctx) error {
 	})
 }
 
-func ValidateRegistration(user models.User) []RegisterErrors {
+func ValidateRegistration(input RegistrationInput) []RegisterErrors {
 	var errors []RegisterErrors
 
 	validate := validator.New()
 
 	//validate struct user
-	err := validate.Struct(user)
+	err := validate.Struct(input)
 	if err != nil {
 		for _, err := range err.(validator.ValidationErrors) {
 			var elements RegisterErrors
