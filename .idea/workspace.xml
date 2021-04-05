@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14a7b2ee-859b-41e3-b529-64b8e36c02b2" name="Default Changelist" comment="DB Config">
-      <change afterPath="$PROJECT_DIR$/ReadMe.Md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="14a7b2ee-859b-41e3-b529-64b8e36c02b2" name="Default Changelist" comment="DB Config" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +88,8 @@
     <MESSAGE value="Login Handler" />
     <MESSAGE value="Jwt Token Implementation" />
     <MESSAGE value="Jwt Implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jwt Implementation" />
+    <MESSAGE value="Markdown" />
+    <option name="LAST_COMMIT_MESSAGE" value="Markdown" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

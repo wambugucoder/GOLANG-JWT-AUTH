@@ -1,7 +1,11 @@
 # **JWT AUTHENTICATION WITH GOFIBER**
 
+ ### Contents
 
 
+- [Introduction](#introduction)
+- [Packages Used](#packages-used)
+- [Images](#images)
 
 
   # Introduction
@@ -15,13 +19,13 @@
   
   - [Gorm](https://gorm.io//) -> The fantastic ORM library for Golang.
   - [Jwt-Go](https://github.com/dgrijalva/jwt-go)-> Used to create jwt tokens while using golang
-- [Bcrypt](golang.org/x/crypto/bcrypt) -> Used to encrypt passwords.
+  - [Bcrypt](golang.org/x/crypto/bcrypt) -> Used to encrypt passwords.
 
+  # Images
+   
 
-   # Images
-
-   ![unauthorized.PNG](images/unauthorized.PNG)
+    ![unauthorized.PNG](images/unauthorized.PNG)
 
     ![login](images/login.PNG)
 
-  ![authentication.PNG](images/authentication.PNG)
+    ![authentication.PNG](images/authentication.PNG)
