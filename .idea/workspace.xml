@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14a7b2ee-859b-41e3-b529-64b8e36c02b2" name="Default Changelist" comment="DB Config">
-      <change afterPath="$PROJECT_DIR$/services/jwtService.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/authentication.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/jwtMiddleware.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/setup.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/setup.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +93,8 @@
     <MESSAGE value="Done with Registration Api" />
     <MESSAGE value="Updated Auth Service" />
     <MESSAGE value="Login Handler" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login Handler" />
+    <MESSAGE value="Jwt Token Implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jwt Token Implementation" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
