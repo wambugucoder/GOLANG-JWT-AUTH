@@ -89,9 +89,10 @@ func LoginUser(ctx *fiber.Ctx) error {
 			})
 		}
 		//GENERATE JWT TOKEN
+		credentials := GenerateJwtToken(user)
 		return ctx.JSON(fiber.Map{
-			"error":   false,
-			"general": "Login Successfull",
+			"error": false,
+			"token": "Bearer " + credentials,
 		})
 
 	}
