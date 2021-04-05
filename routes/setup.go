@@ -13,6 +13,7 @@ func SetupApiRoutes(app *fiber.App) {
 	//AUTH ROUTES
 	auth := app.Group("/api/v1/auth")
 	auth.Post("/register", services.RegisterUser)
+	auth.Post("/login", services.LoginUser)
 
 }
 

@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14a7b2ee-859b-41e3-b529-64b8e36c02b2" name="Default Changelist" comment="DB Config">
+      <change afterPath="$PROJECT_DIR$/repository/userRepository.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/connect.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/connect.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/setup.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/setup.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/password.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/password.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +92,8 @@
     <MESSAGE value="Update .gitignore" />
     <MESSAGE value="Setting Up Registration Service" />
     <MESSAGE value="Done with Registration Api" />
-    <option name="LAST_COMMIT_MESSAGE" value="Done with Registration Api" />
+    <MESSAGE value="Updated Auth Service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Auth Service" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

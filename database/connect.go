@@ -22,6 +22,6 @@ func ConnectDB() {
 	}
 
 	fmt.Println("Connection Opened to Database")
-	DB.AutoMigrate(&models.User{})
+	DB.DropTableIfExists(&models.User{}).AutoMigrate(&models.User{})
 	fmt.Println("Database has been Migrated")
 }
