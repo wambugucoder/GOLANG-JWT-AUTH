@@ -1,3 +1,4 @@
+[![Go](https://github.com/wambugucoder/GOLANG-JWT-AUTH/actions/workflows/go.yml/badge.svg)](https://github.com/wambugucoder/GOLANG-JWT-AUTH/actions/workflows/go.yml)
 # **JWT AUTHENTICATION WITH GOFIBER**
 
  ### Contents
