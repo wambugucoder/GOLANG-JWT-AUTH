@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"golang_auth/config"
 	"golang_auth/models"
+	"log"
 	"strconv"
 
 	"github.com/jinzhu/gorm"
@@ -21,7 +22,7 @@ func ConnectDB() {
 		panic("failed to connect database")
 	}
 
-	fmt.Println("Connection Opened to Database")
-	DB.DropTableIfExists(&models.User{}).AutoMigrate(&models.User{})
-	fmt.Println("Database has been Migrated")
+	log.Println("Connection Opened to Database")
+	DB.DropTableIfExists(&models.User{}, &models.Tweet{}).AutoMigrate(&models.User{}, &models.Tweet{})
+	log.Println("Database has been Migrated")
 }

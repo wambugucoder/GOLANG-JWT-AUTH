@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14a7b2ee-859b-41e3-b529-64b8e36c02b2" name="Default Changelist" comment="DB Config" />
+    <list default="true" id="14a7b2ee-859b-41e3-b529-64b8e36c02b2" name="Default Changelist" comment="DB Config">
+      <change afterPath="$PROJECT_DIR$/models/tweet.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/userService.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/build-errors.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/main.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/connect.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/connect.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/userRepository.go" beforeDir="false" afterPath="$PROJECT_DIR$/repository/userRepository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/setup.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/setup.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/jwtService.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/jwtService.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +56,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="MarkdownNavigator.Settings.Preview" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">

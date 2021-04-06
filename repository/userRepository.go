@@ -30,3 +30,11 @@ func GetUserDetailsByEmail(email string) (*models.User, error) {
 	return &user, nil
 
 }
+func SaveUserAndTweets(user *models.User) bool {
+	err := database.DB.Create(user).Error
+	if err != nil {
+		return false
+	}
+	return true
+
+}
