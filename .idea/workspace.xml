@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14a7b2ee-859b-41e3-b529-64b8e36c02b2" name="Default Changelist" comment="DB Config">
-      <change afterPath="$PROJECT_DIR$/models/tweet.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/userService.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/build-errors.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/main.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/connect.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/connect.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/tweet.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/tweet.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repository/userRepository.go" beforeDir="false" afterPath="$PROJECT_DIR$/repository/userRepository.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/setup.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/setup.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/jwtService.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/jwtService.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/userService.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/userService.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +97,8 @@
     <MESSAGE value="Jwt Token Implementation" />
     <MESSAGE value="Jwt Implementation" />
     <MESSAGE value="Markdown" />
-    <option name="LAST_COMMIT_MESSAGE" value="Markdown" />
+    <MESSAGE value="One To Many Relationship" />
+    <option name="LAST_COMMIT_MESSAGE" value="One To Many Relationship" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

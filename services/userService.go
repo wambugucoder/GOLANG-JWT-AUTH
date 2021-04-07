@@ -43,3 +43,15 @@ func CreateUserAndTweets(ctx *fiber.Ctx) error {
 		"success": "user &tweet saved",
 	})
 }
+func FetchTweets(ctx *fiber.Ctx) error {
+	tweets, didItFind := repository.FindAllTweets()
+	if !didItFind {
+		return ctx.Status(fiber.StatusInternalServerError).JSON(fiber.Map{
+			"error": "oops",
+		})
+	}
+	return ctx.Status(fiber.StatusAccepted).JSON(fiber.Map{
+		"tweets": tweets,
+	})
+
+}

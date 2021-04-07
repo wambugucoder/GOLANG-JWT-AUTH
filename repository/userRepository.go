@@ -38,3 +38,18 @@ func SaveUserAndTweets(user *models.User) bool {
 	return true
 
 }
+
+func FindAllTweets() (*models.Tweet, bool) {
+	var tweets models.Tweet
+	err := database.DB.Preload("Createdby", PreloadOnlyTheseInTweets).Find(&tweets).Error
+	if err != nil {
+		if gorm.IsRecordNotFoundError(err) {
+			return nil, false
+		}
+		return nil, false
+	}
+	return &tweets, true
+}
+func PreloadOnlyTheseInTweets(db *gorm.DB) *gorm.DB {
+	return db.Select("Username,Email")
+}
