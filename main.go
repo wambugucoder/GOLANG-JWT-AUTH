@@ -10,6 +10,13 @@ import (
 )
 
 func main() {
+
+	app := Setup()
+
+	log.Fatal(app.Listen(":3000"))
+
+}
+func Setup() *fiber.App {
 	//INITIALIZE APP
 	app := fiber.New()
 
@@ -27,8 +34,5 @@ func main() {
 		return c.SendStatus(400)
 	})
 
-	log.Fatal(app.Listen(":3000"))
-
-	defer database.DB.Close()
-
+	return app
 }
