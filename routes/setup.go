@@ -8,7 +8,7 @@ import (
 //setUpApiRoutes->Connect all rest Apis
 func SetupApiRoutes(app *fiber.App) {
 	api := app.Group("/api/v1")
-	api.Get("/", hello)
+	api.Get("/hello", hello)
 
 	//AUTH ROUTES
 	auth := app.Group("/api/v1/auth")

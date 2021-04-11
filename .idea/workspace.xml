@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14a7b2ee-859b-41e3-b529-64b8e36c02b2" name="Default Changelist" comment="DB Config" />
+    <list default="true" id="14a7b2ee-859b-41e3-b529-64b8e36c02b2" name="Default Changelist" comment="DB Config">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/setup.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/setup.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +52,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Go Test.main_test.go">
+  <component name="RunManager" selected="Go Build.go build main.go">
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="golang_auth" />
       <working_directory value="$PROJECT_DIR$" />
@@ -77,9 +84,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Test.main_test.go" />
         <item itemvalue="Go Test.go test golang_auth" />
-        <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
   </component>
@@ -114,7 +121,8 @@
     <MESSAGE value="One To Many Relationship" />
     <MESSAGE value="Gorm Preload(Eager Loading)" />
     <MESSAGE value="Api Unit Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Api Unit Test" />
+    <MESSAGE value="Unit test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unit test" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
