@@ -8,7 +8,7 @@ require (
 	github.com/go-playground/validator/v10 v10.6.1
 	github.com/gofiber/fiber/v2 v2.16.0
 	github.com/gofiber/jwt/v2 v2.2.5
-	github.com/google/uuid v1.2.0
+	github.com/google/uuid v1.3.0
 	github.com/jinzhu/gorm v1.9.16
 	github.com/jinzhu/now v1.1.2 // indirect
 	github.com/joho/godotenv v1.3.0
